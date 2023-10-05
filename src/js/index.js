@@ -38,6 +38,7 @@ function displayCatInfo(breedId) {
     .catch((err) => {
       console.error('Error fetching cat info:', err);
       showError();
+      breedSelect.style.display = 'none';
     });
 }
 
